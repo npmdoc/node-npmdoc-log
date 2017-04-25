@@ -65,9 +65,9 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.log.toString">
-            function <span class="apidocSignatureSpan">log.</span>toString
-            <span class="apidocSignatureSpan">()</span>
+            <a class="apidocElementLiA" href="#apidoc.element.log.index">
+            function <span class="apidocSignatureSpan">log.</span>index
+            <span class="apidocSignatureSpan">(level, stream)</span>
             </a>
 
         </li>
@@ -120,6 +120,167 @@
 
         </li>
 
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">log.</span>index.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.log.index">module log.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.log.index.index">
+            function <span class="apidocSignatureSpan">log.</span>index
+            <span class="apidocSignatureSpan">(level, stream)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">log.index.</span>ALERT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">log.index.</span>CRITICAL</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">log.index.</span>DEBUG</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">log.index.</span>EMERGENCY</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">log.index.</span>ERROR</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">log.index.</span>INFO</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">log.index.</span>NOTICE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">log.index.</span>WARNING</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.log.index.prototype">module log.index.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.log.index.prototype.alert">
+            function <span class="apidocSignatureSpan">log.index.prototype.</span>alert
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.log.index.prototype.critical">
+            function <span class="apidocSignatureSpan">log.index.prototype.</span>critical
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.log.index.prototype.debug">
+            function <span class="apidocSignatureSpan">log.index.prototype.</span>debug
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.log.index.prototype.emergency">
+            function <span class="apidocSignatureSpan">log.index.prototype.</span>emergency
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.log.index.prototype.error">
+            function <span class="apidocSignatureSpan">log.index.prototype.</span>error
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.log.index.prototype.info">
+            function <span class="apidocSignatureSpan">log.index.prototype.</span>info
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.log.index.prototype.log">
+            function <span class="apidocSignatureSpan">log.index.prototype.</span>log
+            <span class="apidocSignatureSpan">(levelStr, args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.log.index.prototype.notice">
+            function <span class="apidocSignatureSpan">log.index.prototype.</span>notice
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.log.index.prototype.read">
+            function <span class="apidocSignatureSpan">log.index.prototype.</span>read
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.log.index.prototype.warning">
+            function <span class="apidocSignatureSpan">log.index.prototype.</span>warning
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
@@ -162,14 +323,17 @@ To stream a log, simply pass a readable stream instead of a writable:
 
 
     <h2>
-        <a href="#apidoc.element.log.toString" id="apidoc.element.log.toString">
-        function <span class="apidocSignatureSpan">log.</span>toString
-        <span class="apidocSignatureSpan">()</span>
+        <a href="#apidoc.element.log.index" id="apidoc.element.log.index">
+        function <span class="apidocSignatureSpan">log.</span>index
+        <span class="apidocSignatureSpan">(level, stream)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return toString;
+    <li>description and source-code<pre class="apidocCodePre">function Log(level, stream){
+  if ('string' == typeof level) level = exports[level.toUpperCase()];
+  this.level = level || exports.DEBUG;
+  this.stream = stream || process.stdout;
+  if (this.stream.readable) this.read();
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -189,6 +353,373 @@ To stream a log, simply pass a readable stream instead of a writable:
 
 
 
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.log.index" id="apidoc.module.log.index">module log.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.log.index.index" id="apidoc.element.log.index.index">
+        function <span class="apidocSignatureSpan">log.</span>index
+        <span class="apidocSignatureSpan">(level, stream)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Log(level, stream){
+  if ('string' == typeof level) level = exports[level.toUpperCase()];
+  this.level = level || exports.DEBUG;
+  this.stream = stream || process.stdout;
+  if (this.stream.readable) this.read();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.log.index.prototype" id="apidoc.module.log.index.prototype">module log.index.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.log.index.prototype.alert" id="apidoc.element.log.index.prototype.alert">
+        function <span class="apidocSignatureSpan">log.index.prototype.</span>alert
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">alert = function (msg){
+  this.log('ALERT', arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+log.debug('a debug message');
+log.info('a info message');
+log.notice('a notice message');
+log.warning('a warning message');
+log.error('a error message');
+log.critical('a critical message');
+log.<span class="apidocCodeKeywordSpan">alert</span>('a alert message');
+log.emergency('a emergency message');
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.log.index.prototype.critical" id="apidoc.element.log.index.prototype.critical">
+        function <span class="apidocSignatureSpan">log.index.prototype.</span>critical
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">critical = function (msg){
+  this.log('CRITICAL', arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  , log = new Log('debug', stream);
+
+log.debug('a debug message');
+log.info('a info message');
+log.notice('a notice message');
+log.warning('a warning message');
+log.error('a error message');
+log.<span class="apidocCodeKeywordSpan">critical</span>('a critical message');
+log.alert('a alert message');
+log.emergency('a emergency message');
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.log.index.prototype.debug" id="apidoc.element.log.index.prototype.debug">
+        function <span class="apidocSignatureSpan">log.index.prototype.</span>debug
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">debug = function (msg){
+  this.log('DEBUG', arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## Example
+
+Log level defaults to __DEBUG__ however here we specify __info__, and the stream defaults to _stdout_:
+
+var Log = require('log')
+  , log = new Log('info');
+
+log.<span class="apidocCodeKeywordSpan">debug</span>('preparing email');
+log.info('sending email');
+log.error('failed to send email');
+
+Specifying a specific stream:
+
+var fs = require('fs')
+  , Log = require('log')
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.log.index.prototype.emergency" id="apidoc.element.log.index.prototype.emergency">
+        function <span class="apidocSignatureSpan">log.index.prototype.</span>emergency
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">emergency = function (msg){
+  this.log('EMERGENCY', arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+log.debug('a debug message');
+log.info('a info message');
+log.notice('a notice message');
+log.warning('a warning message');
+log.error('a error message');
+log.critical('a critical message');
+log.alert('a alert message');
+log.<span class="apidocCodeKeywordSpan">emergency</span>('a emergency message');
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.log.index.prototype.error" id="apidoc.element.log.index.prototype.error">
+        function <span class="apidocSignatureSpan">log.index.prototype.</span>error
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">error = function (msg){
+  this.log('ERROR', arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Log level defaults to __DEBUG__ however here we specify __info__, and the stream defaults to _stdout_:
+
+var Log = require('log')
+  , log = new Log('info');
+
+log.debug('preparing email');
+log.info('sending email');
+log.<span class="apidocCodeKeywordSpan">error</span>('failed to send email');
+
+Specifying a specific stream:
+
+var fs = require('fs')
+  , Log = require('log')
+  , log = new Log('debug', fs.createWriteStream('my.log'));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.log.index.prototype.info" id="apidoc.element.log.index.prototype.info">
+        function <span class="apidocSignatureSpan">log.index.prototype.</span>info
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">info = function (msg){
+  this.log('INFO', arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Log level defaults to __DEBUG__ however here we specify __info__, and the stream defaults to _stdout_:
+
+var Log = require('log')
+  , log = new Log('info');
+
+log.debug('preparing email');
+log.<span class="apidocCodeKeywordSpan">info</span>('sending email');
+log.error('failed to send email');
+
+Specifying a specific stream:
+
+var fs = require('fs')
+  , Log = require('log')
+  , log = new Log('debug', fs.createWriteStream('my.log'));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.log.index.prototype.log" id="apidoc.element.log.index.prototype.log">
+        function <span class="apidocSignatureSpan">log.index.prototype.</span>log
+        <span class="apidocSignatureSpan">(levelStr, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">log = function (levelStr, args) {
+  if (exports[levelStr] &lt;= this.level) {
+    var msg = fmt.apply(null, args);
+    this.stream.write(
+        '[' + new Date + ']'
+      + ' ' + levelStr
+      + ' ' + msg
+      + '\n'
+    );
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     , log = new Log('debug', fs.createWriteStream('my.log'));
+
+Instead of the log level constants, you may also supply a string:
+
+   var Log = require('log')
+     , log = new Log('warning');
+
+We can also use `%s` much like `console.<span class="apidocCodeKeywordSpan">log</span>()` to pass arguments:
+
+    log.error('oh no, failed to send mail to %s.', user.email);
+
+## Reader
+
+To stream a log, simply pass a readable stream instead of a writable:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.log.index.prototype.notice" id="apidoc.element.log.index.prototype.notice">
+        function <span class="apidocSignatureSpan">log.index.prototype.</span>notice
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">notice = function (msg){
+  this.log('NOTICE', arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var Log = require('../lib/log')
+  , fs = require('fs')
+  , stream = fs.createWriteStream(__dirname + '/file.log', { flags: 'a' })
+  , log = new Log('debug', stream);
+
+log.debug('a debug message');
+log.info('a info message');
+log.<span class="apidocCodeKeywordSpan">notice</span>('a notice message');
+log.warning('a warning message');
+log.error('a error message');
+log.critical('a critical message');
+log.alert('a alert message');
+log.emergency('a emergency message');
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.log.index.prototype.read" id="apidoc.element.log.index.prototype.read">
+        function <span class="apidocSignatureSpan">log.index.prototype.</span>read
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">read = function (){
+  var buf = ''
+    , self = this
+    , stream = this.stream;
+
+  stream.setEncoding('utf8');
+  stream.on('data', function(chunk){
+    buf += chunk;
+    if ('\n' != buf[buf.length - 1]) return;
+    buf.split('\n').map(function(line){
+      if (!line.length) return;
+      try {
+        var captures = line.match(/^\[([^\]]+)\] (\w+) (.*)/);
+        var obj = {
+            date: new Date(captures[1])
+          , level: exports[captures[2]]
+          , levelString: captures[2]
+          , msg: captures[3]
+        };
+        self.emit('line', obj);
+      } catch (err) {
+        // Ignore
+      }
+    });
+    buf = '';
+  });
+
+  stream.on('end', function(){
+    self.emit('end');
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @api public
+*/
+
+var Log = exports = module.exports = function Log(level, stream){
+ if ('string' == typeof level) level = exports[level.toUpperCase()];
+ this.level = level || exports.DEBUG;
+ this.stream = stream || process.stdout;
+ if (this.stream.readable) this.<span class="apidocCodeKeywordSpan">read</span>();
+};
+
+/**
+* System is unusable.
+*
+* @type Number
+*/
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.log.index.prototype.warning" id="apidoc.element.log.index.prototype.warning">
+        function <span class="apidocSignatureSpan">log.index.prototype.</span>warning
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">warning = function (msg){
+  this.log('WARNING', arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  , fs = require('fs')
+  , stream = fs.createWriteStream(__dirname + '/file.log', { flags: 'a' })
+  , log = new Log('debug', stream);
+
+log.debug('a debug message');
+log.info('a info message');
+log.notice('a notice message');
+log.<span class="apidocCodeKeywordSpan">warning</span>('a warning message');
+log.error('a error message');
+log.critical('a critical message');
+log.alert('a alert message');
+log.emergency('a emergency message');
+...</pre></li>
+    </ul>
 
 
 </div>
